@@ -1,0 +1,467 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HTML Study Notes | Snow Crash</title><meta name="keywords" content="Study Notes"><meta name="author" content="Hao Zhou"><meta name="copyright" content="Hao Zhou"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="What is the WEB?Web pages are mainly composed of elements such as text, images, and hyperlinks. In addition, web pages can also include audio, video, and Flash. Browser is the platform to displayed an">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML Study Notes">
+<meta property="og:url" content="http://haoz124.github.io/project/2021/12/15/HTML-Study-Notes/index.html">
+<meta property="og:site_name" content="Snow Crash">
+<meta property="og:description" content="What is the WEB?Web pages are mainly composed of elements such as text, images, and hyperlinks. In addition, web pages can also include audio, video, and Flash. Browser is the platform to displayed an">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2021-12-15T08:47:02.000Z">
+<meta property="article:modified_time" content="2021-12-17T08:46:31.137Z">
+<meta property="article:author" content="Hao Zhou">
+<meta property="article:tag" content="Study Notes">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/project/img/favicon.png"><link rel="canonical" href="http://haoz124.github.io/project/2021/12/15/HTML-Study-Notes/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/project/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/project/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HTML Study Notes',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-12-17 16:46:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/project/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/project/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/project/">Snow Crash</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HTML Study Notes</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-12-15T08:47:02.000Z" title="Created 2021-12-15 16:47:02">2021-12-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-12-17T08:46:31.137Z" title="Updated 2021-12-17 16:46:31">2021-12-17</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HTML Study Notes"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="What-is-the-WEB"><a href="#What-is-the-WEB" class="headerlink" title="What is the WEB?"></a>What is the WEB?</h1><p><strong>Web pages</strong> are mainly composed of elements such as text, images, and hyperlinks. In addition, web pages can also include audio, video, and Flash.</p>
+<p><strong>Browser</strong> is the platform to displayed and run the web pages.</p>
+<p><strong>Browser kernel</strong> is responsible for reading the content of the webpage, sorting out the information, calculating the display mode of the webpage and displaying the page.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Browser</th>
+<th align="center">Kernel</th>
+<th align="center">Remarks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">IE</td>
+<td align="center">Trident</td>
+<td align="center">IE, Cheetah</td>
+</tr>
+<tr>
+<td align="center">Firefox</td>
+<td align="center">Gecko</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Safari</td>
+<td align="center">Webkit</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Chrome</td>
+<td align="center">Blink</td>
+<td align="center">Opera, Blink was developed from webkit</td>
+</tr>
+</tbody></table>
+<p><strong>Web standards</strong> Structural standards, performance standards and behavior standards</p>
+<ul>
+<li>Structural standards are used to organize and classify web page elements (HTML)</li>
+<li>Performance standards are used to set the layout, color, size and other appearance attributes of web page elements (CSS)</li>
+<li>Behavior standards are used to define web page models and write interactions (JavaScript)</li>
+</ul>
+<p>Benfits of web standards:</p>
+<ul>
+<li>Easy to maintain: just change the CSS file, you can change the style of the whole site</li>
+<li>Fast page response: HTML document size becomes smaller and response time is short</li>
+<li>Accessibility: Web pages written in semantic HTML (HTML with separated structure and presentation) are easier to be recognized by screen readers</li>
+<li>Device compatibility: Different style sheets can make web pages appear in different styles on different devices</li>
+<li>Search engine: Semantic HTML can be more easily parsed by search engines and improve ranking</li>
+</ul>
+<h1 id="What-is-the-HTML"><a href="#What-is-the-HTML" class="headerlink" title="What is the HTML?"></a>What is the HTML?</h1><p><strong>HTML (Hyper Text Markup Language)</strong>: Because it can add images, sounds, animations, multimedia and other content (beyond text limitations), but also it can also jump from one file to another, linking with files on hosts all over the world (hyperlink text).</p>
+<p><strong>HTML format</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- The largest label on the page Root label --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Head tag --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Title tag --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- The main body of the document --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>Document type</strong>&lt;!DOCTYPE&gt;: is used to indicate what version of XHTML or HTML you are using. <code>&lt;!DOCTYPE html&gt;</code> tells the browser to parse the page according to the HTML5 standard.</p>
+<p><strong>Page language lang</strong> specifies the language used for the content of the html tag <code>&lt;html lang=&quot;en&quot;&gt;</code> *en defines the language as English zh-CN defines the language as Chinese </p>
+<ul>
+<li>Set the css styles or fonts of different languages ​​and tell search engines to do accurate identification</li>
+<li>Let the grammar checker do language recognition</li>
+<li>Help the translation tool to do the recognition</li>
+<li>Help web page readers to recognize</li>
+</ul>
+<p><strong>Character set</strong> is a collection of multiple characters. The computer needs to accurately process the characters of various character sets, and character encoding is required so that the computer can recognize and store various characters.</p>
+<p><strong>UTF-8</strong> is currently the most commonly used character set encoding method. Let the html file be saved in UTF-8 encoding, and the browser decodes the corresponding html content according to the encoding. <code>&lt;meta charset=&quot;UTF-8&quot; /&gt;</code></p>
+<p><strong>Use of meta viewport</strong> Usually viewport refers to window, viewport. The area on the browser (or a webview in an app) used to display web pages. The viewports on the mobile side and the pc side are different. The viewport on the pc side is the browser window area, and there are three different viewport concepts on the mobile side: layout viewport, visual viewport, ideal viewport meta has two attributes name and http-equiv<br><strong>The value of the name attribute</strong></p>
+<ul>
+<li>keywords (keyword) tell the search engine, the keyword of the page</li>
+<li>description (website description) is used to tell search engines the main content of your website.</li>
+<li>viewport (mobile terminal window)</li>
+<li>Robots (define the indexing method of search engine crawlers) Robots are used to tell crawlers which pages need to be indexed and which pages do not need to be indexed</li>
+<li>author</li>
+<li>generator (webpage creation software)</li>
+<li>copyright</li>
+<li><em>http-equiv</em>* is equivalent to the file header function of http, it can return some useful information to the browser to help display the content of the web page correctly and accurately</li>
+</ul>
+<ul>
+<li>content-Type sets the character set of the webpage (Html4 use, not recommended)</li>
+<li>Expires (period), can be used to set the expiration time of the web page. Once the webpage expires, it must be retransmitted to the server.</li>
+<li>Pragma (cache mode) is used to set to prohibit the browser from accessing the content of the page from the cache of the local machine. Once set, it cannot be recalled from the Cache once you leave the page.</li>
+<li>Refresh, automatically refresh and point to the new page.</li>
+<li>cache-control (caching mechanism followed by requests and responses)<br><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code></li>
+</ul>
+<h2 id="HTML-commonly-used-tags"><a href="#HTML-commonly-used-tags" class="headerlink" title="HTML commonly used tags"></a>HTML commonly used tags</h2><ol>
+<li><h3 id="Title-tag-h-h1-h6"><a href="#Title-tag-h-h1-h6" class="headerlink" title="Title tag h (h1~h6)"></a>Title tag h (h1~h6)</h3><p>The paragraph tag p, you can divide the HTML document into several paragraphs<br>Horizontal line label hr<br>Newline label br<br>The div and span tags: have no semantics, they are the two most important boxes in our web page layout.</p>
+</li>
+<li><h3 id="Typesetting-label"><a href="#Typesetting-label" class="headerlink" title="Typesetting label"></a>Typesetting label</h3><p>b and strong text in bold<br>i and em text in italics<br>s and del text are displayed in strikethrough<br>u and ins text is displayed underlined</p>
+</li>
+<li><h3 id="Label-attributes-inline"><a href="#Label-attributes-inline" class="headerlink" title="Label attributes (inline)"></a>Label attributes (inline)</h3><p>When using HTML to make web pages, if you want HTML tags to provide more information, you can use the attributes of HTML tags to set them.<br>&lt;tag name attribute 1=”attribute value 1” attribute 2=”attribute value 2” …&gt; content &lt;/tag name&gt;<br><mobile phone color="red" size="5 inch"> &lt;/mobile phone&gt;</p>
+</li>
+<li><h3 id="Image-tag"><a href="#Image-tag" class="headerlink" title="Image tag"></a>Image tag</h3><p>The tag can have multiple attributes, which must be written in the opening tag, after the tag name.<br>The order of attributes is not distinguished, and the tag name and attribute, and the attribute and attribute are separated by spaces.<br>Take the key-value pair format key=”value” format<br><code>&lt;img src=&quot;cz.jpg&quot; width=&quot;300&quot; height=&quot;300&quot; border=&quot;3&quot; title=&quot;This is a small dandelion&quot; /&gt;</code></p>
+</li>
+<li><h3 id="Link-tags-emphasis"><a href="#Link-tags-emphasis" class="headerlink" title="Link tags (emphasis)"></a>Link tags (emphasis)</h3><p><code>&lt;a href=&quot;jump target&quot; target=&quot;how to pop up the target window&quot;&gt;text or image&lt;/a&gt;</code><br>target=”_self” The default window pop-up method<br>target=”_blank” A new window pops up</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">Attribute</th>
+<th align="center">Function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">href</td>
+<td align="center">used to specify the URL address of the link target</td>
+</tr>
+<tr>
+<td align="center">target</td>
+<td align="center">used to specify the opening method of the linked page</td>
+</tr>
+</tbody></table>
+<p><strong>In conslusion, src is the href of the imported resource and the redirect URL</strong></p>
+<p><strong>Src</strong> is used to replace the current element, and href is used to establish a connection between the current document and the referenced resource.<br><strong>src</strong> is the abbreviation of source. It points to the location of external resources. The content pointed to will be embedded in the location of the current tag in the document; when src resources are requested, the pointed resources will be downloaded and applied to the document, such as js scripts, img pictures And frame and other elements. When the browser parses the element, it will suspend the download and processing of other resources until the resource is loaded, compiled, and executed. The same applies to elements such as pictures and frames, similar to embedding the pointed resource in the current tag. This is why the js script is placed at the bottom instead of the head.<br><strong>href</strong> is the abbreviation of Hypertext Reference. It points to the location of network resources and establishes a link with the current element (anchor) or the current document (link). If we add it to the document, the browser will recognize the document as a css file, it will download resources in parallel and will not stop processing the current document. This is why it is recommended to use link to load css instead of @import.<br><strong>Note</strong>:External links need to be added http:// www<br>Internal link directly link to the name of the internal page, such as <code>&lt;a href=&quot;index.html&quot;&gt;</code> homepage<br>If the link target is not determined at that time, the href attribute value of the link tag is usually defined as “#” (ie href=”#”), indicating that the link is temporarily an empty link.<br>Not only can you create text hyperlinks, but you can also add hyperlinks to various web page elements such as images, tables, audio, and video.</p>
+<p><strong>Anchor point positioning</strong>: By creating anchor point links, users can quickly locate the target content.</p>
+<ul>
+<li><p>Use the corresponding id name to mark the location of the jump target. (Find target)</p>
+<h3 id="two">Episode 2</h3></li>
+<li><p>Use <a href="#id名">link text</a> to create link text (clicked)</p>
+<a href="#two"></li>
+</ul>
+<ol start="6">
+<li><h3 id="Comment-tag"><a href="#Comment-tag" class="headerlink" title="Comment tag"></a>Comment tag</h3><!-- Comment statement -->
+The shortcut key is: ctrl + /<br>Or ctrl +shift + /</li>
+</ol>
+<h2 id="Things-to-be-paid-attention-while-writing-HTML-code"><a href="#Things-to-be-paid-attention-while-writing-HTML-code" class="headerlink" title="Things to be paid attention while writing HTML code"></a>Things to be paid attention while writing HTML code</h2><ul>
+<li>Use as few non-semantic tags div and span as possible;</li>
+<li>When the semantics are not obvious, when you can use div or p, try to use p, because p has upper and lower spacing by default, which is beneficial to compatible special terminals;</li>
+<li>Don’t use pure style tags, such as b, font, u, etc., use css settings instead.</li>
+<li>The text that needs to be emphasized can be included in strong or em tags (browser preset styles, you can specify them with CSS). The default style of strong is bold (don’t use b), and em is italic (don’t use i);</li>
+<li>When using a table, use caption for the title, thead for the head, tbody for the main body, and tfoot for the tail. The header should be distinguished from the general cell. Use th for the header and td for the cell;</li>
+<li>The form field should be wrapped with the fieldset tag, and the legend tag should be used to explain the purpose of the form;</li>
+<li>The description text corresponding to each input tag needs to use the label tag, and the description text is associated with the corresponding input by setting the id attribute for the input and setting for in the label tag.</li>
+</ul>
+<h1 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h1><h2 id="Table-1"><a href="#Table-1" class="headerlink" title="Table"></a>Table</h2><p>Now it is still a more commonly used label, but it is not used for layout. It is commonly used to display and display table format data. Because it can make the data display very regular, and the readability is very good. Especially when the data is displayed in the background, it is very important to use the table skillfully. A refreshing and simple table can show the complicated data in a very organized manner.</p>
+<h2 id="Create-Table"><a href="#Create-Table" class="headerlink" title="Create Table"></a>Create Table</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>The text in the cell<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Note: table, tr, td, they are the basic tags to create a table, none of them are indispensable</p>
+<ul>
+<li>Table is used to define a table label.</li>
+<li>The tr tag is used to define the rows in the table and must be nested in the table tag.</li>
+<li>td is used to define the cells in the table and must be nested in the <tr></tr> tag.</li>
+<li>The letter td refers to table data, which is the content of data cells. Now we understand that the most suitable place for a table is to store data. td is like a container, which can hold all the elements. Image</li>
+<li>Header cell label th: Generally, the header cell is located in the first row or first column of the table, and the text is bold and centered, just use the header tag <th></th> to replace the corresponding cell tag <td ></td> That’s it.</li>
+</ul>
+<p>Table title caption Usually this caption will be centered and displayed on the table. <strong>The caption tag must immediately follow the table tag.</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">caption</span>&gt;</span>I am the title of the table<span class="tag">&lt;/<span class="name">caption</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Table-Properties"><a href="#Table-Properties" class="headerlink" title="Table Properties"></a>Table Properties</h2><p>The three parameters of Image are 0, and the three parameters we usually develop border cellpadding cellspacing are 0</p>
+<h2 id="Merge-cells"><a href="#Merge-cells" class="headerlink" title="Merge cells"></a>Merge cells</h2><ul>
+<li>Follow the order of merging from top to bottom, from left to right. After merging, we need to delete extra cells.</li>
+<li>Merge across rows: rowspan=”the number of merged cells”</li>
+<li>Merge across columns: colspan=”the number of merged cells”</li>
+</ul>
+<h2 id="Summary-Form"><a href="#Summary-Form" class="headerlink" title="Summary Form"></a>Summary Form</h2><table>
+<thead>
+<tr>
+<th align="center">Tag Name</th>
+<th align="center">Definition</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>&lt;table&gt;&lt;/table&gt;</code></td>
+<td align="center">The table tag</td>
+<td align="center">A square box</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;tr&gt;&lt;/tr&gt;</code></td>
+<td align="center">Table row tag</td>
+<td align="center">must be inside the table label to make sense</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;td&gt;&lt;/td&gt;</code></td>
+<td align="center">Cell tag</td>
+<td align="center">a table data, you can put anything in them</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;th&gt;&lt;/th&gt;</code></td>
+<td align="center">The header cell tag</td>
+<td align="center">the text inside will be centered and bold</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;caption&gt;&lt;/caption&gt;</code></td>
+<td align="center">Table title tag</td>
+<td align="center">The title of the table, follow the table and align with the center of the table</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;clospan&gt; &lt;rowspan&gt;</code></td>
+<td align="center">merging</td>
+<td align="center">used to merge cells</td>
+</tr>
+</tbody></table>
+<h2 id="Table-structure"><a href="#Table-structure" class="headerlink" title="Table structure"></a>Table structure</h2><p>For more complex forms, the structure of the form is relatively complicated, so the form is divided into three parts: head, body and footnotes. These three parts are marked with: thead, tbody, and tfoot respectively, so as to better distinguish the table structure.</p>
+<p>Notice:</p>
+<ol>
+<li><thead></thead>: Used to define the head of the table. Used to put things like titles. <thead> must have a <tr> tag inside!</li>
+<li><tbody></tbody>: Used to define the main body of the table. Put the data body.</li>
+<li><tfoot></tfoot> put footnotes of the table and the like.</li>
+<li>The above labels are all placed in the table label.</li>
+</ol>
+<h1 id="List"><a href="#List" class="headerlink" title="List"></a>List</h1><p>The “list ul” container is a form of text or diagrams with a structure and a consistent style, which is called a list.</p>
+<p>The biggest feature of the list is that it is neat, tidy, and orderly. It is similar to a table, but it can be combined with a higher degree of freedom.</p>
+<h2 id="Unordered-list-ul"><a href="#Unordered-list-ul" class="headerlink" title="Unordered list ul"></a>Unordered list ul</h2><p>Only <li></li> can be nested in <ul></ul>. Directly inputting other tags or text in the <ul></ul> tag is not allowed.<br>The space between <li>and</li> is equivalent to a container, which can hold all elements.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>List item 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>List item 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>List item 3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  ......</span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Ordered-list-ol"><a href="#Ordered-list-ol" class="headerlink" title="Ordered list ol"></a>Ordered list ol</h2><p>The type attribute value in the <ol> tag is the sequence number for sorting. When the type attribute is not added, the ordered list will be sorted from the number 1 by default.<br>Commonly used type attribute values ​​are 1, a, A, i, I<br>The reversed attribute in <ol reversed="reversed"> allows the sequence in the ordered list to be arranged in reverse order.<br>The start attribute value in <ol start="3"> is 3, and the first sequence number in the ordered list will be arranged starting from 3.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">&quot;A&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>List item 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>List two<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>List three<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Defined-List-DL"><a href="#Defined-List-DL" class="headerlink" title="Defined List DL"></a>Defined List DL</h2><p>The definition list is often used to explain and describe terms or nouns. There is no bullet before the list items in the definition list.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>noun 1<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Noun 1 explanation 1<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Noun 1 explanation 2<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>noun 2<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Noun 2 explanation 1<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Noun 2 explanation 2<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Form"><a href="#Form" class="headerlink" title="Form"></a>Form</h1><p>In HTML, a complete form usually consists of three parts: form controls (also called form elements), prompt information, and form fields. The purpose of the form is to collect user information.</p>
+<p><strong>Image form control</strong>: contains specific form function items, such as single-line text input box, password input box, check box, submit button, reset button, etc.<br><strong>Prompt information</strong>: a form usually needs to contain some descriptive text to prompt the user to fill in and operate.<br><strong>Form field</strong>: is equivalent to a container, used to hold all form controls and prompt information, through which you can define the URL address of the program used to process the form data, and the method of submitting the data to the server. If the form fields are not defined, the data in the form cannot be transmitted to the backend server.</p>
+<h2 id="Input-Control"><a href="#Input-Control" class="headerlink" title="Input Control"></a>Input Control</h2><p><code>&lt;input type=&quot;attribute value&quot; value=&quot;hello&quot;&gt;</code><br>The <code>&lt;input&gt;</code> tag is a single tag</p>
+<ol>
+<li><p>Type<br>Username: <input type="text" /><br>Password: <input type="password" /></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Username: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line">Password: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>Value<br>value The default text value. Some forms want to display several texts by default as soon as the page is opened, which can be set by this value.<br>User name: <input type="text" name="username" value="Please enter the user name"><br><code>User name: &lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;Please enter the user name&quot;&gt;</code></p>
+</li>
+<li><p>Name<br>name The name of the form, so that the backend can find this form through the name attribute. There are many forms on the page, and the main function of name is to distinguish between different forms.<br>The value behind the name attribute is defined by ourselves.<br>If the radio is a group, we must give them the same name name so we can select one of them<br>The name attribute, we use less now, but when we learn ajax and backend, it is a must.<br><input type="radio" name="sex" />Male<br><input type="radio" name="sex" />Female</p>
+</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> /&gt;</span>Male</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> /&gt;</span>Female</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>Checked<br>Represents the default selected state. More common in radio buttons and check buttons.<br>Gender:<br><input type="radio" name="sex" value="Male" checked="checked" />Male<br><input type="radio" name="sex" value="女" />Female</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Gender:</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Male&quot;</span> <span class="attr">checked</span>=<span class="string">&quot;checked&quot;</span> /&gt;</span>Male</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">value</span>=<span class="string">&quot;女&quot;</span> /&gt;</span>Female</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">Attribute</th>
+<th align="center">Description</th>
+<th align="center">Function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">type</td>
+<td align="center">form type</td>
+<td align="center">used to specify different control types</td>
+</tr>
+<tr>
+<td align="center">value</td>
+<td align="center">Form value</td>
+<td align="center">The text displayed by default in the form</td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">form name</td>
+<td align="center">main function of name is to distinguish different forms</td>
+</tr>
+<tr>
+<td align="center">checked</td>
+<td align="center">selected by default</td>
+<td align="center">the radio or check button is selected at the beginning</td>
+</tr>
+</tbody></table>
+<h2 id="Label-Tag"><a href="#Label-Tag" class="headerlink" title="Label Tag"></a>Label Tag</h2><p>The label tag defines the label (label) for the input element.<br>The main purpose of label is to improve user experience. Improve the best service for users.<br>Function: Used to bind a form element. When the label is clicked, the bound form element will get the input focus.</p>
+<p>How to bind elements</p>
+<p>The first usage is to directly include the input form with the label tag, which is suitable for a single form selection<br>The second usage of the for attribute specifies which form element the label is bound to (via id).<br>  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span> Username:</span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;usename&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Please enter the user name&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure><br>  The second<br>  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;sex&quot;</span>&gt;</span>Male<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">id</span>=<span class="string">&quot;sex&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Textarea-Control-text-field"><a href="#Textarea-Control-text-field" class="headerlink" title="Textarea Control (text field)"></a>Textarea Control (text field)</h2><p>You can easily create a multi-line text input box through the textarea control.<br>cols=”The number of characters in each row” rows=”The number of rows displayed” We do not actually develop</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span>&gt;</span></span><br><span class="line">  Text content</span><br><span class="line"><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>The difference between text box and text field:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Form</th>
+<th align="center">Name</th>
+<th align="center">Difference</th>
+<th align="center">Default value</th>
+<th align="center">Usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">input</td>
+<td align="center">type=”text”</td>
+<td align="center">The text box can only display one line of text</td>
+<td align="center">Single tag, the default value is displayed through value</td>
+<td align="center">User name, nickname, password, etc.</td>
+</tr>
+<tr>
+<td align="center">textarea</td>
+<td align="center">text area can display multiple lines of text</td>
+<td align="center">Double tags, the default value is written in the middle of the label</td>
+<td align="center">Message board</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="Select-drop-down-list"><a href="#Select-drop-down-list" class="headerlink" title="Select drop-down list"></a>Select drop-down list</h2><p>If there are multiple options for the user to choose, in order to save space, we can use the select control to define a drop-down list.<br>When you define selected = “selected” in option, the current item is the default selected item.<br>We actually use less for development</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>Option 1<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>Option 2<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">option</span>&gt;</span>Option 3<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Form field<br>How to transfer the collected user information to the server? Via form field<br>Purpose:<br>In HTML, form tags are used to define form fields to collect and transmit user information. All content in the form will be submitted to the server.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;url address&quot;</span> <span class="attr">method</span>=<span class="string">&quot;submission method&quot;</span> <span class="attr">name</span>=<span class="string">&quot;form name&quot;</span>&gt;</span></span><br><span class="line">  Various form controls</span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">Attribute</th>
+<th align="center">Value</th>
+<th align="center">Usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">action</td>
+<td align="center">url address</td>
+<td align="center">used to specify the url address of the server program that receives and processes the form data</td>
+</tr>
+<tr>
+<td align="center">method</td>
+<td align="center">get/post</td>
+<td align="center">used to set the submission method of form data, and its value is get or post</td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">Name</td>
+<td align="center">used to specify the name of the form to distinguish multiple forms on the same page</td>
+</tr>
+</tbody></table>
+<ul>
+<li>GET is harmless when the browser rolls back, while POST will submit the request again.</li>
+<li>GET requests will be actively cached by the browser, while POST will not, unless manually set.</li>
+<li>GET requests can only be url-encoded, while POST supports multiple encoding methods.</li>
+<li>GET request parameters will be completely retained in the browser history, while POST parameters will not be retained.</li>
+<li>The size of a GET request is generally (1024 bytes). There is no restriction on the http protocol, and it is related to the server and operating system. Theoretically, there is no size restriction on POST, and there is no size restriction on the http protocol specification, but in fact, the post can be transmitted. The amount of data depends on the server settings and memory size.</li>
+<li>For the data type of the parameter, GET only accepts ASCII characters, while POST has no restrictions.</li>
+<li>GET is less secure than POST because the parameters are directly exposed on the URL, so it cannot be used to transmit sensitive information.</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Hao Zhou</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://haoz124.github.io/project/2021/12/15/HTML-Study-Notes/">http://haoz124.github.io/project/2021/12/15/HTML-Study-Notes/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/project/tags/Study-Notes/">Study Notes</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/project/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hao Zhou</div><div class="author-info__description">A space to share my study and thought</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/project/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a></div><div class="card-info-data-item is-center"><a href="/project/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#What-is-the-WEB"><span class="toc-number">1.</span> <span class="toc-text">What is the WEB?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#What-is-the-HTML"><span class="toc-number">2.</span> <span class="toc-text">What is the HTML?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-commonly-used-tags"><span class="toc-number">2.1.</span> <span class="toc-text">HTML commonly used tags</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Title-tag-h-h1-h6"><span class="toc-number">2.1.1.</span> <span class="toc-text">Title tag h (h1~h6)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Typesetting-label"><span class="toc-number">2.1.2.</span> <span class="toc-text">Typesetting label</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Label-attributes-inline"><span class="toc-number">2.1.3.</span> <span class="toc-text">Label attributes (inline)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Image-tag"><span class="toc-number">2.1.4.</span> <span class="toc-text">Image tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Link-tags-emphasis"><span class="toc-number">2.1.5.</span> <span class="toc-text">Link tags (emphasis)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#two"><span class="toc-number">2.1.6.</span> <span class="toc-text">Episode 2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Comment-tag"><span class="toc-number">2.1.7.</span> <span class="toc-text">Comment tag</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Things-to-be-paid-attention-while-writing-HTML-code"><span class="toc-number">2.2.</span> <span class="toc-text">Things to be paid attention while writing HTML code</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Table"><span class="toc-number">3.</span> <span class="toc-text">Table</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Table-1"><span class="toc-number">3.1.</span> <span class="toc-text">Table</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Create-Table"><span class="toc-number">3.2.</span> <span class="toc-text">Create Table</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Table-Properties"><span class="toc-number">3.3.</span> <span class="toc-text">Table Properties</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Merge-cells"><span class="toc-number">3.4.</span> <span class="toc-text">Merge cells</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary-Form"><span class="toc-number">3.5.</span> <span class="toc-text">Summary Form</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Table-structure"><span class="toc-number">3.6.</span> <span class="toc-text">Table structure</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#List"><span class="toc-number">4.</span> <span class="toc-text">List</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Unordered-list-ul"><span class="toc-number">4.1.</span> <span class="toc-text">Unordered list ul</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ordered-list-ol"><span class="toc-number">4.2.</span> <span class="toc-text">Ordered list ol</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Defined-List-DL"><span class="toc-number">4.3.</span> <span class="toc-text">Defined List DL</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Form"><span class="toc-number">5.</span> <span class="toc-text">Form</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Input-Control"><span class="toc-number">5.1.</span> <span class="toc-text">Input Control</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Label-Tag"><span class="toc-number">5.2.</span> <span class="toc-text">Label Tag</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Textarea-Control-text-field"><span class="toc-number">5.3.</span> <span class="toc-text">Textarea Control (text field)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Select-drop-down-list"><span class="toc-number">5.4.</span> <span class="toc-text">Select drop-down list</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/project/2021/12/15/HTML-Study-Notes/" title="HTML Study Notes"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/project/img/404.jpg'" alt="HTML Study Notes"/></a><div class="content"><a class="title" href="/project/2021/12/15/HTML-Study-Notes/" title="HTML Study Notes">HTML Study Notes</a><time datetime="2021-12-15T08:47:02.000Z" title="Created 2021-12-15 16:47:02">2021-12-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Hao Zhou</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/project/js/utils.js"></script><script src="/project/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
