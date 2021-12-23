@@ -1,0 +1,465 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CSS Study Note Part 3 | Snow Crash</title><meta name="keywords" content="CSS,Notes,Front End,Website"><meta name="author" content="Hao Zhou"><meta name="copyright" content="Hao Zhou"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Emmet Grammer enter label name then press tab to create EX. div enter label name * times to create multiple label EX. div*3 use &gt; to indicate up and down classes EX. ul&gt;li use + to indicate same">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS Study Note Part 3">
+<meta property="og:url" content="https://haoz124.github.io/2021/12/21/CSS%20Study%20Note%20Part%203/index.html">
+<meta property="og:site_name" content="Snow Crash">
+<meta property="og:description" content="Emmet Grammer enter label name then press tab to create EX. div enter label name * times to create multiple label EX. div*3 use &gt; to indicate up and down classes EX. ul&gt;li use + to indicate same">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2021-12-21T07:55:23.000Z">
+<meta property="article:modified_time" content="2021-12-23T02:53:08.324Z">
+<meta property="article:author" content="Hao Zhou">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="Notes">
+<meta property="article:tag" content="Front End">
+<meta property="article:tag" content="Website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://haoz124.github.io/2021/12/21/CSS%20Study%20Note%20Part%203/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'CSS Study Note Part 3',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-12-23 10:53:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Snow Crash</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CSS Study Note Part 3</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-12-21T07:55:23.000Z" title="Created 2021-12-21 15:55:23">2021-12-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-12-23T02:53:08.324Z" title="Updated 2021-12-23 10:53:08">2021-12-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="CSS Study Note Part 3"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Emmet-Grammer"><a href="#Emmet-Grammer" class="headerlink" title="Emmet Grammer"></a>Emmet Grammer</h1><ul>
+<li>enter label name then press tab to create EX. div</li>
+<li>enter label name * times to create multiple label EX. div*3</li>
+<li>use &gt; to indicate up and down classes EX. ul&gt;li</li>
+<li>use + to indicate same level classes EX. p+div</li>
+<li>add a class or id to label by .demo or #two EX. p.one</li>
+<li>if you need the label to be incremental by order, use $*number</li>
+<li>add content to label by using {}</li>
+</ul>
+<h1 id="CSS-Compound-Selector"><a href="#CSS-Compound-Selector" class="headerlink" title="CSS Compound Selector"></a>CSS Compound Selector</h1><p><strong>Compound selector</strong>: It is composed of two or more basic selectors combined in different ways</p>
+<p><strong>Commonly used compound selectors include</strong>: descendant selectors, sub-selectors, union selectors, pseudo-class selectors</p>
+<h2 id="Descendant-Selector"><a href="#Descendant-Selector" class="headerlink" title="Descendant Selector"></a>Descendant Selector</h2><ul>
+<li>The descendant selector is also called the containment selector, which can select the child elements in the parent element</li>
+<li>The writing method is to write the outer label at the front and the inner label at the back, separated by a space. When the labels are nested, the inner label is called the descendant of the outer label<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Element 1 element 2 &#123;</span><br><span class="line">    Style declaration</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>The above syntax means to select all elements 2 (descendants) in element 1, for example<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/*Select all li tag elements in ul*/</span><br><span class="line">ul li &#123;</span><br><span class="line">    </span><br><span class="line">    Style declaration</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>Element 1 and element 2 are separated by a space</li>
+<li>Element 1 is the parent, element 2 is the child, and finally element 2 is selected</li>
+</ul>
+<h2 id="Sub-Selector"><a href="#Sub-Selector" class="headerlink" title="Sub Selector"></a>Sub Selector</h2><ul>
+<li>The child element selector can only select the closest child element of a certain element. The simple understanding is to select the parent-child element.<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Element 1&gt; element 2&#123;</span><br><span class="line">    Style declaration</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+The above syntax means to select all direct descendants (child elements) of element 2 in element 1, for example<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*Select all the nearest P tag elements in the div*/</span><br><span class="line">div&gt; p&#123;</span><br><span class="line">    Style declaration</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>Element 1 and element 2 are separated by a greater than sign</li>
+<li>Element 1 is the parent, element 2 is the child, and finally element 2 is selected</li>
+<li>Element 2 must be his own son, his grandson, great-grandson, etc. are not under his control<h2 id="Union-Selector"><a href="#Union-Selector" class="headerlink" title="Union Selector"></a>Union Selector</h2></li>
+</ul>
+<p><strong>The union selector can select multiple sets of labels and define the same style for them at the same time.</strong></p>
+<ul>
+<li>The union selector is formed by connecting the selectors with English commas</li>
+<li>Any form of selector can be used as part of the union selector<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Element 1, element 2 &#123;</span><br><span class="line">    Style declaration</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+The above syntax means selecting element 1 and element 2, for example<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*Select ul and div tag elements */</span><br><span class="line">ul,div &#123;</span><br><span class="line">    Style declaration</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>Element 1 and element 2 are separated by a comma</li>
+<li>The comma can be understood as a sum</li>
+<li>Union selectors are usually used for collective declarations<h1 id="Pseudo-class-Selector"><a href="#Pseudo-class-Selector" class="headerlink" title="Pseudo-class Selector"></a>Pseudo-class Selector</h1></li>
+<li>Pseudo-type selectors are used to add special effects to certain selectors, such as adding special effects to links, or selecting the first and nth elements</li>
+<li>The biggest feature of pseudo-class selector writing is that ** is represented by a colon (**, such as :hover, :first-child</li>
+<li>There are many pseudo-class selectors, such as link pseudo-classes and structural pseudo-classes. Here are the commonly used link pseudo-class selectors.<h3 id="Link-pseudo-class-selector"><a href="#Link-pseudo-class-selector" class="headerlink" title="Link pseudo-class selector"></a>Link pseudo-class selector</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">/* a is the label selector */</span><br><span class="line">a &#123;</span><br><span class="line">    color:gray;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* :hover is a link pseudo-type selector, mouse over */</span><br><span class="line">a :hover &#123;</span><br><span class="line">    /*When the mouse passes by, the original gray becomes red*/</span><br><span class="line">   color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="Focus-pseudo-class-selector"><a href="#Focus-pseudo-class-selector" class="headerlink" title=":Focus pseudo-class selector"></a>:Focus pseudo-class selector</h3><ul>
+<li>The :focus pseudo-class selector is used to select the form element that has the focus</li>
+<li>The focus is the cursor, which can only be obtained by<code> &lt;input&gt;</code> form elements in general, so this selector is also mainly for form elements<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">input: focus &#123;</span><br><span class="line">    background-color:yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Selector</th>
+<th align="center">Function</th>
+<th align="center">Features</th>
+<th align="center">Usage Conditions</th>
+<th align="center">Symbols and Usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Descendant selector</td>
+<td align="center">used to select descendant elements</td>
+<td align="center">It can be descendants</td>
+<td align="center">More</td>
+<td align="center">spaces .nav a</td>
+</tr>
+<tr>
+<td align="center">Child selector</td>
+<td align="center">selects the nearest element</td>
+<td align="center">only the parent and son</td>
+<td align="center">less</td>
+<td align="center">greater than .nav&gt;p</td>
+</tr>
+<tr>
+<td align="center">Union selector</td>
+<td align="center">selects certain elements of the same style</td>
+<td align="center">used for group declarations</td>
+<td align="center">More</td>
+<td align="center">commas .nav,.header</td>
+</tr>
+<tr>
+<td align="center">Link pseudo-type selector</td>
+<td align="center">select links in different states</td>
+<td align="center">related to links</td>
+<td align="center">More</td>
+<td align="center">Focus on a{} and a:hover</td>
+</tr>
+<tr>
+<td align="center">:focus selector</td>
+<td align="center">select the form to get the cursor</td>
+<td align="center">related to the form</td>
+<td align="center">Less</td>
+<td align="center">input:focus</td>
+</tr>
+</tbody></table>
+<h1 id="CSS-Element-Display-Mode"><a href="#CSS-Element-Display-Mode" class="headerlink" title="CSS Element Display Mode"></a>CSS Element Display Mode</h1><h2 id="Block-Element"><a href="#Block-Element" class="headerlink" title="Block Element"></a>Block Element</h2><ul>
+<li>Common block elements are <code>&lt;h1&gt;~&lt;h6&gt;, &lt;p&gt;, &lt;div&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code>, etc., among which the <code>&lt;div&gt;</code> tag is the most typical block element.</li>
+<li>Features of block-level elements:<ol>
+<li>More domineering, owning his own line</li>
+<li>Height, width, outer margin and inner margin can all be controlled</li>
+<li>The default width is 100% of the container (parent width)</li>
+<li>It is a container and box, which can release internal or block-level elements</li>
+</ol>
+</li>
+</ul>
+<p><strong>Notice:</strong><br>    1. Block-level elements cannot be used in text elements<br>    2. The <code>&lt;p&gt;</code> tag is mainly used to store text, so block-level elements cannot be placed in <code>&lt;p&gt;</code>, especially <code>&lt;div&gt;</code><br>    3. Similarly, <code>&lt;h1&gt;~&lt;h6&gt;</code> are all text-type block-level tags, and other block-level elements cannot be stored in them.</p>
+<h2 id="Inline-Elements"><a href="#Inline-Elements" class="headerlink" title="Inline Elements"></a>Inline Elements</h2><ul>
+<li>Common inline elements are <code>&lt;a&gt;, &lt;strong&gt;, &lt;b&gt;, &lt;em&gt;, &lt;i&gt;, &lt;del&gt;, &lt;s&gt;, &lt;ins&gt;, &lt;u&gt;, &lt;span&gt;</code>, etc.</li>
+<li>The <code>&lt;span&gt;</code> tag is the most typical inline element. In some places, inline elements are also called inline elements.</li>
+<li>Characteristics of inline elements:<ol>
+<li>Elements in adjacent rows are on one line, and one line can display multiple</li>
+<li>Direct setting of height and width is invalid</li>
+<li>The default width is the width of its own content</li>
+<li>Inline elements can only hold text or other inline elements</li>
+</ol>
+</li>
+</ul>
+<p><strong>Notice:</strong><br>    1. No more links can be placed in the link<br>    2. Special case link <code>&lt;a&gt;</code> can put block-level elements, but it is safest to switch to block-level mode for <code>&lt;a&gt;</code></p>
+<h2 id="Inline-Block-Elements"><a href="#Inline-Block-Elements" class="headerlink" title="Inline Block Elements"></a>Inline Block Elements</h2><ul>
+<li>There are several special tags in inline elements-<code>&lt;img /&gt;, &lt;input /&gt;, &lt;td&gt;</code>, they have the characteristics of block elements and inline elements at the same time</li>
+<li>Some data call them inline block elements</li>
+<li>Features:<ol>
+<li>It is on one line with the elements in the adjacent line, but there will be gaps between them. Multiple lines can be displayed (characteristics of elements in the line)</li>
+<li>The default width is the width of its own content (characteristics of inline elements)</li>
+<li>Height, row height, outer margin and inner margin can all be controlled (characteristics of block-level elements)</li>
+</ol>
+</li>
+</ul>
+<h2 id="Summary-1"><a href="#Summary-1" class="headerlink" title="Summary"></a>Summary</h2><table>
+<thead>
+<tr>
+<th align="center">Element Mode</th>
+<th align="center">Element Arrangement</th>
+<th align="center">Style</th>
+<th align="center">Default Width</th>
+<th align="center">Included</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Block-level elements</td>
+<td align="center">Only one block-level element can be placed in a row</td>
+<td align="center">The width and height can be set</td>
+<td align="center">100% of the container</td>
+<td align="center">container level can contain any label</td>
+</tr>
+<tr>
+<td align="center">In-line elements</td>
+<td align="center">Multiple in-line elements can be placed in one line</td>
+<td align="center">The width and height cannot be set directly</td>
+<td align="center">the width and height of the width of its own content</td>
+<td align="center">contains text or other in-line elements</td>
+</tr>
+<tr>
+<td align="center">Inline block element</td>
+<td align="center">put multiple inline block elements in a row</td>
+<td align="center">the width and height of the width of its own content</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="Element-display-mode-conversion"><a href="#Element-display-mode-conversion" class="headerlink" title="Element display mode conversion"></a>Element display mode conversion</h2><ul>
+<li>Converted to a block element: display:block</li>
+<li>Converted to inline elements: display:inline</li>
+<li>Convert to inline block element: display:inline-block</li>
+</ul>
+<h1 id="CSS-Background"><a href="#CSS-Background" class="headerlink" title="CSS Background"></a>CSS Background</h1><ul>
+<li>With CSS background properties, you can add background styles to page elements.</li>
+<li>The background property can set the background color, background image, background tile, background image position, background image fixation, etc.</li>
+</ul>
+<h2 id="Background-color"><a href="#Background-color" class="headerlink" title="Background-color"></a>Background-color</h2><ul>
+<li><p>The background-color attribute defines the background color of the element<br><code>background-color: transparent;</code></p>
+</li>
+<li><p>Under normal circumstances, the default color is transparent (transparent), we can also manually specify the background color as transparent</p>
+</li>
+</ul>
+<h2 id="Background-image"><a href="#Background-image" class="headerlink" title="Background-image"></a>Background-image</h2><ul>
+<li>The background-image attribute describes the background image of the element.<br><code>background-image: none | url(url)</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Results</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">none</td>
+<td align="center">no background image (default)</td>
+</tr>
+<tr>
+<td align="center">url</td>
+<td align="center">background image specified by absolute or relative address</td>
+</tr>
+</tbody></table>
+<p><strong>Note: Don’t forget to add URL to the address behind the background image, and don’t add quotation marks to the path inside.</strong></p>
+<h2 id="Background-repeat"><a href="#Background-repeat" class="headerlink" title="Background-repeat"></a>Background-repeat</h2><ul>
+<li>The background-repeat attribute defines the tiling of the background image<br><code>background-repeat: repeat| no-repeat| repeat-x| repeat-y</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Results</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">repeat</td>
+<td align="center">background image is tiled vertically and horizontally (default)</td>
+</tr>
+<tr>
+<td align="center">no-repeat</td>
+<td align="center">background image is not tiled</td>
+</tr>
+<tr>
+<td align="center">repeat-x</td>
+<td align="center">background image is tiled horizontally</td>
+</tr>
+<tr>
+<td align="center">repeat-y</td>
+<td align="center">background image is tiled vertically</td>
+</tr>
+</tbody></table>
+<h2 id="Background-position"><a href="#Background-position" class="headerlink" title="Background-position"></a>Background-position</h2><ul>
+<li>The background-position property can change the position of the picture in the background<br><code>background-position: x y;</code></li>
+<li>Parameters: X coordinate Y coordinate</li>
+<li>You can use location nouns or precise units<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">length Percentage</td>
+<td align="center">Length value composed of floating-point numbers and unit identifiers</td>
+</tr>
+<tr>
+<td align="center">position</td>
+<td align="center">top/center/bottom/left/center/right position noun</td>
+</tr>
+</tbody></table>
+</li>
+<li>Parameter is a position noun<ol>
+<li>If the two specified values ​​are both position nouns, the order of the two values ​​is irrelevant, such as left top and top left</li>
+<li>If only one azimuth noun is specified and the other value is omitted, the second value will be centered by default</li>
+</ol>
+</li>
+<li>Parameters are precise units<ol>
+<li>If the parameter value is an exact coordinate, then the first one must be the x coordinate, and the second one must be the y coordinate</li>
+<li>If only one value is specified, the value must be the x coordinate, and the other one is centered vertically by default</li>
+</ol>
+</li>
+<li>Parameters are mixed units<ol>
+<li>If the two specified values ​​are a mixture of precise units and orientation nouns, the first value is the x coordinate, and the second value is the y coordinate<h2 id="Background-attachment"><a href="#Background-attachment" class="headerlink" title="Background-attachment"></a>Background-attachment</h2></li>
+</ol>
+</li>
+<li>The background-attachment property sets whether the background image is fixed or scrolls with the rest of the page<br><code>background-attachment: scroll | fixed</code><table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Effects</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">scroll</td>
+<td align="center">scroll with the content of the object</td>
+</tr>
+<tr>
+<td align="center">fixed</td>
+<td align="center">background image fixed</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h2 id="Background-compound-writing"><a href="#Background-compound-writing" class="headerlink" title="Background compound writing"></a>Background compound writing</h2><ul>
+<li>background: background color, background image address, background tile, background image scroll, background image location<br><code>background: transparent url(image.jpg) repeat-y fixed top;</code><br>This is the way we advocate more in actual development.</li>
+</ul>
+<h2 id="Transparent-background-color"><a href="#Transparent-background-color" class="headerlink" title="Transparent background color"></a>Transparent background color</h2><p>CSS3 provides us with a semi-transparent background color effect<br><code>background: rgba(0,0,0,0.3);</code></p>
+<ol>
+<li>The last parameter is alpha transparency, the value range is between 0~1</li>
+<li>We are used to omit the 0 of 0.3 and write it as background(0,0,0,.3);</li>
+<li>Note: Translucent background means that the background of the box is translucent, and the content inside the box will not be affected</li>
+</ol>
+<h2 id="Summary-2"><a href="#Summary-2" class="headerlink" title="Summary"></a>Summary</h2><table>
+<thead>
+<tr>
+<th align="center">Attribute</th>
+<th align="center">value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">background-color</td>
+<td align="center">predefined color value/hexadecimal/RGB code</td>
+</tr>
+<tr>
+<td align="center">background-image</td>
+<td align="center">url (image path)</td>
+</tr>
+<tr>
+<td align="center">background-repeat</td>
+<td align="center">repeat/ no-repeat /repeat-x/repeat-y</td>
+</tr>
+<tr>
+<td align="center">background-position</td>
+<td align="center">length/position are x and y coordinates respectively</td>
+</tr>
+<tr>
+<td align="center">background-attachment</td>
+<td align="center">scroll (background scroll) /fixed (background fixed)</td>
+</tr>
+<tr>
+<td align="center">Background abbreviation</td>
+<td align="center">background image address, background tile, background scroll, background position</td>
+</tr>
+<tr>
+<td align="center">Background color</td>
+<td align="center">background: rgba(0,0,0,0.3); four values ​​must be followed</td>
+</tr>
+</tbody></table>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Hao Zhou</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://haoz124.github.io/2021/12/21/CSS%20Study%20Note%20Part%203/">https://haoz124.github.io/2021/12/21/CSS%20Study%20Note%20Part%203/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CSS/">CSS</a><a class="post-meta__tags" href="/tags/Notes/">Notes</a><a class="post-meta__tags" href="/tags/Front-End/">Front End</a><a class="post-meta__tags" href="/tags/Website/">Website</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/12/20/CSS%20Study%20Note%20Part%202/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">CSS Study Note Part 2</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/12/18/CSS%20Study%20Note%20Part%201/" title="CSS Study Note Part 1"><img class="cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-18</div><div class="title">CSS Study Note Part 1</div></div></a></div><div><a href="/2021/12/20/CSS%20Study%20Note%20Part%202/" title="CSS Study Note Part 2"><img class="cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-20</div><div class="title">CSS Study Note Part 2</div></div></a></div><div><a href="/2021/12/15/HTML-Study-Notes/" title="HTML Study Notes"><img class="cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-15</div><div class="title">HTML Study Notes</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hao Zhou</div><div class="author-info__description">A space to share my study and thought</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Emmet-Grammer"><span class="toc-number">1.</span> <span class="toc-text">Emmet Grammer</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS-Compound-Selector"><span class="toc-number">2.</span> <span class="toc-text">CSS Compound Selector</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Descendant-Selector"><span class="toc-number">2.1.</span> <span class="toc-text">Descendant Selector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sub-Selector"><span class="toc-number">2.2.</span> <span class="toc-text">Sub Selector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Union-Selector"><span class="toc-number">2.3.</span> <span class="toc-text">Union Selector</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Pseudo-class-Selector"><span class="toc-number">3.</span> <span class="toc-text">Pseudo-class Selector</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Link-pseudo-class-selector"><span class="toc-number">3.0.1.</span> <span class="toc-text">Link pseudo-class selector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Focus-pseudo-class-selector"><span class="toc-number">3.0.2.</span> <span class="toc-text">:Focus pseudo-class selector</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary"><span class="toc-number">3.1.</span> <span class="toc-text">Summary</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS-Element-Display-Mode"><span class="toc-number">4.</span> <span class="toc-text">CSS Element Display Mode</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Block-Element"><span class="toc-number">4.1.</span> <span class="toc-text">Block Element</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Inline-Elements"><span class="toc-number">4.2.</span> <span class="toc-text">Inline Elements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Inline-Block-Elements"><span class="toc-number">4.3.</span> <span class="toc-text">Inline Block Elements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary-1"><span class="toc-number">4.4.</span> <span class="toc-text">Summary</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Element-display-mode-conversion"><span class="toc-number">4.5.</span> <span class="toc-text">Element display mode conversion</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS-Background"><span class="toc-number">5.</span> <span class="toc-text">CSS Background</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Background-color"><span class="toc-number">5.1.</span> <span class="toc-text">Background-color</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Background-image"><span class="toc-number">5.2.</span> <span class="toc-text">Background-image</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Background-repeat"><span class="toc-number">5.3.</span> <span class="toc-text">Background-repeat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Background-position"><span class="toc-number">5.4.</span> <span class="toc-text">Background-position</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Background-attachment"><span class="toc-number">5.5.</span> <span class="toc-text">Background-attachment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Background-compound-writing"><span class="toc-number">5.6.</span> <span class="toc-text">Background compound writing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Transparent-background-color"><span class="toc-number">5.7.</span> <span class="toc-text">Transparent background color</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary-2"><span class="toc-number">5.8.</span> <span class="toc-text">Summary</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/12/21/CSS%20Study%20Note%20Part%203/" title="CSS Study Note Part 3"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS Study Note Part 3"/></a><div class="content"><a class="title" href="/2021/12/21/CSS%20Study%20Note%20Part%203/" title="CSS Study Note Part 3">CSS Study Note Part 3</a><time datetime="2021-12-21T07:55:23.000Z" title="Created 2021-12-21 15:55:23">2021-12-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/20/CSS%20Study%20Note%20Part%202/" title="CSS Study Note Part 2"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS Study Note Part 2"/></a><div class="content"><a class="title" href="/2021/12/20/CSS%20Study%20Note%20Part%202/" title="CSS Study Note Part 2">CSS Study Note Part 2</a><time datetime="2021-12-20T08:47:02.000Z" title="Created 2021-12-20 16:47:02">2021-12-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/18/CSS%20Study%20Note%20Part%201/" title="CSS Study Note Part 1"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS Study Note Part 1"/></a><div class="content"><a class="title" href="/2021/12/18/CSS%20Study%20Note%20Part%201/" title="CSS Study Note Part 1">CSS Study Note Part 1</a><time datetime="2021-12-18T08:47:02.000Z" title="Created 2021-12-18 16:47:02">2021-12-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/15/HTML-Study-Notes/" title="HTML Study Notes"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML Study Notes"/></a><div class="content"><a class="title" href="/2021/12/15/HTML-Study-Notes/" title="HTML Study Notes">HTML Study Notes</a><time datetime="2021-12-15T08:47:02.000Z" title="Created 2021-12-15 16:47:02">2021-12-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Hao Zhou</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
